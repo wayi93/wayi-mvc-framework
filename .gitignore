@@ -1,0 +1,10 @@
+# IDE files
+/.idea
+
+# configurations
+/config
+
+# empty folder
+/src
+/lib
+/tmp
