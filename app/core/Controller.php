@@ -11,8 +11,8 @@ class Controller
 
     public function model($model)
     {
-        $modelClassName = $model . 'Model';
-        require_once MODELS_ROOT . $modelClassName . '.php';
+        $modelClassName = $model;
+        require_once MODELS_ROOT . $model . '.php';
         return new $modelClassName();
     }
 

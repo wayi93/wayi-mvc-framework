@@ -14,14 +14,12 @@ Controller Path: /wayi-mvc-framework/app/controllers
 
 ### Naming Rules
 Controller: XxxxController.php<br/>
-Model: XxxxModel.php
+Model: Xxxx.php
 
 ### Rules
 There is at least on method in the controller
 
 
 ### Test
-URL: http://localhost/<br/>
-Result: Welcome to WaYi MVC Framework!<br/>
-URL: http://localhost/home/index/wayi<br/>
-Result: Welcome to WaYi MVC Framework! Hello wayi!
+URL: http://localhost/ or http://www.ying.com/home/index<br/>
+Result: A table of all posts will be shown on the page.

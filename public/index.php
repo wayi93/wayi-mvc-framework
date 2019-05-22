@@ -15,4 +15,4 @@ define('VIEWS_ROOT', APP_ROOT . 'views' . DIRECTORY_SEPARATOR);
 
 require_once '../app/init.php';
 
-$app = new App;
+$app = new App();

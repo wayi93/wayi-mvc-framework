@@ -4,6 +4,9 @@
 # configurations
 /config
 
+# test
+/test
+
 # empty folder
 /src
 /lib

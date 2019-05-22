@@ -9,16 +9,22 @@
 class HomeController extends Controller
 {
 
-    public function index($name = '')
+    protected $post;
+
+    public function __construct()
+    {
+        $this->post = $this->model('Post');
+    }
+
+    public function index()
     {
 
-        // get a instance of the user model
-        $user = $this->model('User');
-        $user->name = $name;
+        //$posts = Post::select('created_at', 'updated_at', 'title', 'body')->where('id', 1)->get()->toArray();
+        $posts = Post::all('created_at', 'updated_at', 'title', 'body')->toArray();
 
         // get a instance of the views
         $this->view('header');
-        $this->view('home/index', ['name' => $user->name]);
+        $this->view('home/index', ['posts' => $posts]);
         $this->view('footer');
 
     }
