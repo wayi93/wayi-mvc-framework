@@ -18,10 +18,10 @@ if($datas['posts'] !== null){
         <?php
         foreach ($datas['posts'] AS $post){
             echo '<tr>
-                    <td>' . $post['created_at'] . '</td>
-                    <td>' . $post['updated_at'] . '</td>
-                    <td>' . $post['title'] . '</td>
-                    <td>' . $post['body'] . '</td>
+                    <td>' . Helper::escapeHtmlValue($post['created_at']) . '</td>
+                    <td>' . Helper::escapeHtmlValue($post['updated_at']) . '</td>
+                    <td>' . Helper::escapeHtmlValue($post['title']) . '</td>
+                    <td>' . Helper::escapeHtmlValue($post['body']) . '</td>
                 </tr>';
         }
         ?>
