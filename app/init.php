@@ -6,6 +6,9 @@
  * Time: 11:17
  */
 
+// Config
+$configs = parse_ini_file('../config/config.ini');
+
 // Composer autoloader
 require_once '../vendor/autoload.php';
 

@@ -62,4 +62,4 @@ Result: A table of all posts will be shown on the page.
             <td>PostContent005</td>
         </tr>
     </tbody>
-/table>
+</table>

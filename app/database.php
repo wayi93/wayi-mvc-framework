@@ -12,10 +12,10 @@ $capsule = new Capsule();
 
 $capsule->addConnection([
     'driver' => 'mysql',
-    'host' => '127.0.0.1',
-    'username' => 'root',
-    'password' => 'wy123456',
-    'database' => 'wayi_mvc_framework_db',
+    'host' => $configs['host'],
+    'username' => $configs['username'],
+    'password' => $configs['password'],
+    'database' => $configs['database'],
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',
